@@ -5,7 +5,7 @@ const commonOptions = require("../common/common-options");
 const CATEGORY_JAVASCRIPT = "JavaScript";
 
 // format based on https://github.com/prettier/prettier/blob/main/src/main/core-options.js
-/** @type {{ [name: string]: import("../main/core-options").OptionInfo }} */
+/** @type {import("../main/core-options").OptionObject} */
 module.exports = {
   arrowParens: {
     since: "1.9.0",

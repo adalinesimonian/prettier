@@ -27,6 +27,9 @@ const CATEGORY_SPECIAL = "Special";
  * @property {string} [cliCategory]
  * @property {string} [cliDescription]
  *
+ * @typedef {{ [name: string]: OptionInfo }} OptionObject An object containing
+ * option information keyed by option name.
+ *
  * @typedef {number | boolean | string} OptionValue
  * @typedef {OptionValue | [{ value: OptionValue[] }] | Array<{ since: string, value: OptionValue}>} OptionValueInfo
  *
@@ -47,7 +50,7 @@ const CATEGORY_SPECIAL = "Special";
  * @property {OptionValueInfo} [redirect] - redirect deprecated value
  */
 
-/** @type {{ [name: string]: OptionInfo }} */
+/** @type {OptionObject} */
 const options = {
   cursorOffset: {
     since: "1.4.0",

@@ -3,7 +3,7 @@
 const CATEGORY_COMMON = "Common";
 
 // format based on https://github.com/prettier/prettier/blob/main/src/main/core-options.js
-/** @type {{ [name: string]: import("../main/core-options").OptionInfo }} */
+/** @type {import("../main/core-options").OptionObject} */
 module.exports = {
   bracketSpacing: {
     since: "0.0.0",
